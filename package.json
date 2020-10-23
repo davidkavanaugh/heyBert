@@ -1,0 +1,14 @@
+{
+  "name": "heybert",
+  "version": "1.0.0",
+  "description": "Collect Ernie's ducks and avoid Oscar",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Kavanaugh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
