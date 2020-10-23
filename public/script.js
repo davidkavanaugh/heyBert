@@ -1,8 +1,8 @@
 import * as DrawMap from "./map/draw-map.js";
 import * as GameLoop from "./loop.js";
 $(document).ready(function () {
-  const height = 15;
-  const width = 25;
+  const height = 10;
+  const width = 15;
   const map = DrawMap.newMap(height, width);
   let output = "";
   for (let y = 0; y < height; y++) {

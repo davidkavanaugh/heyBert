@@ -21,7 +21,8 @@ export const moveOscar = async (map) => {
   if (direction === "UP") {
     if (
       map[oscarCoorindates[1] - 1][oscarCoorindates[0]] !== 1 &&
-      map[oscarCoorindates[1] - 1][oscarCoorindates[0]] !== 2
+      map[oscarCoorindates[1] - 1][oscarCoorindates[0]] !== 2 &&
+      map[oscarCoorindates[1] - 1][oscarCoorindates[0]] !== 5
     ) {
       if (map[oscarCoorindates[1] - 1][oscarCoorindates[0]] === 4) {
         alert("Game Over!");
@@ -34,7 +35,8 @@ export const moveOscar = async (map) => {
   if (direction === "DOWN") {
     if (
       map[oscarCoorindates[1] + 1][oscarCoorindates[0]] !== 1 &&
-      map[oscarCoorindates[1] + 1][oscarCoorindates[0]] !== 2
+      map[oscarCoorindates[1] + 1][oscarCoorindates[0]] !== 2 &&
+      map[oscarCoorindates[1] + 1][oscarCoorindates[0]] !== 5
     ) {
       if (map[oscarCoorindates[1] + 1][oscarCoorindates[0]] === 4) {
         alert("Game Over!");
@@ -47,7 +49,8 @@ export const moveOscar = async (map) => {
   if (direction === "LEFT") {
     if (
       map[oscarCoorindates[1]][oscarCoorindates[0] - 1] !== 1 &&
-      map[oscarCoorindates[1]][oscarCoorindates[0] - 1] !== 2
+      map[oscarCoorindates[1]][oscarCoorindates[0] - 1] !== 2 &&
+      map[oscarCoorindates[1]][oscarCoorindates[0] - 1] !== 5
     ) {
       if (map[oscarCoorindates[1]][oscarCoorindates[0] - 1] === 4) {
         alert("Game Over!");
@@ -60,7 +63,8 @@ export const moveOscar = async (map) => {
   if (direction === "RIGHT") {
     if (
       map[oscarCoorindates[1]][oscarCoorindates[0] + 1] !== 1 &&
-      map[oscarCoorindates[1]][oscarCoorindates[0] + 1] !== 2
+      map[oscarCoorindates[1]][oscarCoorindates[0] + 1] !== 2 &&
+      map[oscarCoorindates[1]][oscarCoorindates[0] + 1] !== 5
     ) {
       if (map[oscarCoorindates[1]][oscarCoorindates[0] + 1] === 4) {
         alert("Game Over!");
