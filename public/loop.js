@@ -5,8 +5,11 @@ import * as DrawMap from "./map/draw-map.js";
 
 export const run = (map, height, width) => {
   let newMap;
+  let duckBool = false;
   setInterval(async function () {
-    newMap = await moveOscar(map);
+    let newTempMap = await moveOscar(map, duckBool);
+    newMap = newTempMap.map;
+    duckBool = newTempMap.duckBool;
     DrawMap.refresh(newMap);
   }, 200);
 
